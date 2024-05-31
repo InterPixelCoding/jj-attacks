@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.min.js" integrity="sha256-c9vxcXyAG4paArQG3xk6DjyW/9aHxai2ef9RpMWO44A=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.5/jspdf.min.js"></script>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <title>JJ Attacks - Card Creator</title>
+</head>
+<body>
+    <section class="center-items">
+        <h1>Create a New Hero Card</h1>
+        <div class="wrapper">
+            <div class="template">
+                <div class="colour-overlay" style="--data-hue: 30"></div>
+                <div class="dark-mode-overlay"></div>
+                <img src="./template.png">
+                <div class="hero-image center-items">
+                </div>
+                <div class="info-container">
+                    <h1 class="title" contenteditable="true">Blake Wollston</h1>
+                    <div class="statistics">
+                    </div>
+                    <div class="abilities">
+                        <h2>Unique Abilities</h2>
+                        <p contenteditable="true" spellcheck="true">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo officia vitae iusto reiciendis voluptatum quae eos, illum harum itaque, odio ea! Eum ducimus ex aspernatur nihil doloribus non animi odit.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="controls">
+            <input type="file" class="upload-button" accept="image/*">
+            <div class="rarity-container">
+                <span>Rarity: 1</span>
+                <input type="range" name="rarity" min="1" max="6" step="1" value="1">
+            </div>
+            <button class="download">Download Hero Card</button>
+        </div>
+    </section>
+</body>
+</html>
